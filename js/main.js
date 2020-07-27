@@ -1,5 +1,8 @@
 "use strict";
 
 import postData from "./data.js";
-import renderPost from "./renderPost";
+import renderFeed from "./renderFeed.js";
+
+
+renderFeed(postData, "#feed");
 

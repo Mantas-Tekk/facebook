@@ -1,0 +1,92 @@
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr 250px;
+    grid-template-areas:
+    "head head head"
+    "menu content messenger"
+    "footer footer footer";
+}
+.header{
+    padding: 10px;
+    background-color: #37f;
+    color: #fff;
+    grid-area: head;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.menu{
+    padding: 10px;
+    background-color: #eee;
+    grid-area: menu;
+}
+.messenger{
+    padding: 10px;
+    background-color: #ddd;
+    grid-area: messenger;
+}
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    grid-area: footer;
+}
+
+img {
+    width: 300px;
+}
+
+.feed {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: minmax(300px, 500px);
+    gap: 40px 20px;
+    padding: 80px 20px;
+}
+    .feed >.post{
+
+    }
+        .feed >.post > .post-header{
+
+        }
+            .feed .post-header > .user-profile-photo{
+
+            }
+                .feed .user-profile-photo > img{
+
+                }
+            .feed .post-header > .user-details{
+
+            }
+                .feed .user-details > .author{
+
+                }
+                    .feed .user-details .link{
+
+                    }
+                .feed .user-details > .time{
+
+                }
+            .feed .post-header > .post-actions{
+
+            }
+
+        .feed >.post > .post-content{
+
+        }
+        .feed >.post > .post-footer{
+
+        }
+
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "head"
+        "menu" 
+        "messenger"
+        "content" 
+        "footer";
+    }
+}
