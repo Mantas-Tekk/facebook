@@ -1,8 +1,14 @@
 function renderText(text) {
-    if(text.length <= 300){
-        return `<p>${text}</p>`; 
+    const shortText = 60;
+    const mediumText = 300;
+    const largeText = 360;
+    if (text.length <= shortText) {
+        return `<p class="big-text">${text}</p>`;
+    } else if (text.length <= largeText) {
+        return `<p>${text}</p>`;
     } else {
-        return `<p>${text.slice(0, 300)}  See more...</p>`;
+        return `<p class="short-text">${text.slice(0, mediumText)}...  <span class="read-more">See more</span></p>
+                <p class="full-text hidden">${text} <span class="read-less">See less</span></p>`;
     }
 
 }

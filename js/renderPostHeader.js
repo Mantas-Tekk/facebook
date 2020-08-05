@@ -1,3 +1,4 @@
+import timestampToTime from "./timestampToTime.js";
 function renderPostHeader(data, timestamp) {
     return `
         <div class="post-header">
@@ -8,7 +9,7 @@ function renderPostHeader(data, timestamp) {
                 <div class="author">
                     <a href="${data.link}" class="link">${data.name} ${data.lastname}</a>
                 </div>
-                <div class="time">${timestamp} ago</div>
+                <div class="time">${timestampToTime(timestamp)}</div>
             </div>
             <div class="post-action">...</div>
         </div>

@@ -6,17 +6,14 @@ function renderPostContent(data) {
     let HTML = "";
     if(data.text){
         if(!data.photos && data.background){
-            HTML += renderTextWithBackground(data.text);
+            HTML += renderTextWithBackground(data.text, data.background);
         } else {
-            HTML += renderText(data.text, data.background);
+            HTML += renderText(data.text);
         }
     }
     if(data.photos) {
         HTML += renderPhotos(data.photos);
     }
-
-
-    console.log(data);
     return `<div class="post-content">
                 ${HTML}
             </div>`;

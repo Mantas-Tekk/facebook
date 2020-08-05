@@ -33,7 +33,7 @@ const postData = [
         postTimestamp: 1595404607052,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-            background: 'orange'
+            background: "orange",
         }
     },
     {
@@ -41,13 +41,13 @@ const postData = [
             photo: 'jackie-chan.jpg',
             name: 'Jackie',
             lastname: 'Chan',
-            link: 'jackie-chan'
+            link: 'jackie-chan',
         },
         postTimestamp: 1595404087052,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente nemo architecto. Alias, error ipsa?',
             photos: [
-                'photo1.jpg'
+                'photo1.jpg',
             ]
         }
     },
@@ -56,14 +56,14 @@ const postData = [
             photo: 'bruce-lee.jpg',
             name: 'Bruce',
             lastname: 'Lee',
-            link: 'bruce-lee'
+            link: 'bruce-lee',
         },
         postTimestamp: 1595400487052,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente nemo architecto. Alias, error ipsa?',
             photos: [
                 'photo1.jpg',
-                'photo2.jpg'
+                'photo2.jpg',
             ]
         }
     },
@@ -72,7 +72,7 @@ const postData = [
             photo: 'bruce-willis.jpg',
             name: 'Bruce',
             lastname: 'Willis',
-            link: 'bruce-willis'
+            link: 'bruce-willis',
         },
         postTimestamp: 1595300487052,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
@@ -80,7 +80,7 @@ const postData = [
             photos: [
                 'photo1.jpg',
                 'photo2.jpg',
-                'photo3.jpg'
+                'photo3.jpg',
             ]
         }
     },
@@ -89,7 +89,7 @@ const postData = [
             photo: 'ip-man.jpg',
             name: 'Ip',
             lastname: 'Man',
-            link: 'ip-man'
+            link: 'ip-man',
         },
         postTimestamp: 1594300487052,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
@@ -98,7 +98,7 @@ const postData = [
                 'photo1.jpg',
                 'photo2.jpg',
                 'photo3.jpg',
-                'photo4.jpg'
+                'photo4.jpg',
             ]
         }
     },
@@ -107,7 +107,7 @@ const postData = [
             photo: 'optimus-prime.png',
             name: 'Optimus',
             lastname: 'Prime',
-            link: 'optimus-prime'
+            link: 'optimus-prime',
         },
         postTimestamp: 1584300487052,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
@@ -145,7 +145,7 @@ const postData = [
         postTimestamp: 1495402689570,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-            background: 'red'
+            background: 'red',
         }
     }
 ];

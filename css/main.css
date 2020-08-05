@@ -12,9 +12,11 @@ body {
     background-color: #37f;
     color: #fff;
     grid-area: head;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    z-index: 1;
 }
 .menu{
     padding: 10px;
@@ -92,6 +94,37 @@ img {
                 padding: 10px;
                 font-size: 16px;
                 line-height: 22px;
+            }
+
+            .feed .post-content > p.hidden{
+                display: none;
+            }
+
+            .feed p > .read-more,
+            .feed p > .read-less{
+                color: rgb(15, 147, 230);
+                cursor: pointer;
+            }
+
+            .feed .post-content > p.big-text{
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .feed .post-content > p.background{
+                height: 400px;
+                padding: 40px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .feed .post-content > p.red{
+                color: #fff;
+                background-color: tomato;
+            }
+            .feed .post-content > p.orange{
+                color: #fff;
+                background-color: orange;
             }
         .feed .post-content > .gallery {
             width: 100%;
