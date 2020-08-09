@@ -1,0 +1,94 @@
+.header {
+    background-color: #242526;
+    color: #fff;
+}
+    .header-container {
+        height: 60px;
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+        .header-left {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            border:solid 2px orangered;
+
+        }
+            .header-left > .header-input {
+                background-color: #3A3B3C;
+                height: 40px;
+                border-radius: 20px;
+                display: inline-block;
+                float: left;
+                margin-left: 5px;
+            }
+                .header-left > .header-input > .header-input-icon {
+                    display: inline-block;
+                    float: left;
+                    width: 20px;
+                    height: 20px;
+                    margin: 10px;
+                    color: rgb(195, 195, 195);
+                }
+                .header-left > .header-input > input {
+                    display: inline-block;
+                    float: left;
+                    height: inherit;
+                    border-radius: 20px;
+                    padding: 5px;
+                    overflow: hidden;
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    outline: none;
+                    color: #fff;
+                    font-size: 17px;
+                }
+                    .header-left > .header-input > input::placeholder {
+                        color: rgb(195, 195, 195);
+                    }
+
+            .header-left > a {
+                display: inline-block;
+                float: left;
+                margin-left: 16px;
+            }
+                .header-left > a > img {
+                    height: 40px;
+                    width: 40px;
+                    background-color: rgb(46, 126, 179);
+                    border-radius: 50%;
+                }
+
+
+        .header-middle {
+            border:solid 2px orange;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+            .header-middle > a {
+                /* background-color: ivory; */
+                height: 50px;
+                width: 100%;
+                margin: 5px;
+            }
+                .header-middle > a:hover {
+                    background-color: lightgreen;
+                }
+
+            .header-middle > a > .header-middle-icons {
+                    text-align: center;
+                }
+                    .header-middle .header-middle-icons > i {
+
+                        font-size: 30px;
+                    }
+
+        .header-right {
+            border:solid 2px olivedrab;
+        }
+
+@media (max-width: 1260px) {
+    .header-left > .header-input > input {
+        display: none;
+    }
+}

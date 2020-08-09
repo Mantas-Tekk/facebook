@@ -1,15 +1,12 @@
 body {
     display: grid; 
-     grid-template-columns: minmax(280px, 360px) 1fr minmax(280px, 360px);
+    grid-template-columns: minmax(280px, 360px) 1fr minmax(280px, 360px);
     grid-template-areas:
     "head head head"
     "menu content messenger"
 }
 .header{
     height: 60px;
-    padding: 10px;
-    background-color: #37f;
-    color: #fff;
     grid-area: head;
     position: fixed;
     top: 0;
@@ -37,7 +34,6 @@ img {
 .feed {
     grid-area: content;
     display: grid;
-    /* grid-template-columns: 1fr; */
     grid-template-columns: minmax(500px, 680px);
     gap: 40px 20px;
     padding: 80px 20px;
