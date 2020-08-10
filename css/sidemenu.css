@@ -22,6 +22,7 @@
 
 #sidemenu {
     background-color: #18191A;
+    /* background-color: #ad2626; */
     position: fixed;
     height: 100%;
     top:  60px;
@@ -36,13 +37,52 @@
     #sidemenu .group-links .group-wrapper::after {
         content: "";
         position: absolute;
-        bottom: 0;
-        right: 0;
-        background: magenta;
-        width: 20px;
-        height: 20px;
-        border-bottom: 1px solid #124561;
+        bottom: -20px;
+        left: 0;
+        background-color: #303031;
+        width: 92%;
+        margin: 0 4%;
+        height: 1px;
     }
+        .title {
+            width:92%;
+            /* background-color: lawngreen; */
+            margin-left: 4%;
+            height: 40px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .title:hover a {
+            opacity: 1;
+        }
+
+            .title h3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #888;
+            }
+            .title a {
+                opacity: 0;
+                color: rgb(54, 54, 179);
+                font-weight: 500;
+                text-decoration: none;
+                padding: 0 5px;
+                height: 100%;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                position: absolute; 
+                top: 0;
+                right: 0; 
+            }
+            .title a:hover {
+                /* padding: 8px; */
+                padding: 0 5px;
+                background-color: #303031;
+                border-radius: 10%;
+            }
 
     #sidemenu .sidemenu-item-link {
         text-decoration: none;

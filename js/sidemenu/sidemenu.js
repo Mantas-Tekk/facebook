@@ -1,7 +1,7 @@
 // import postData from "../data";
 
 function sidemeniu(data, selector){
-    const dataSize = data.length / 5;
+    const dataSize = data.length;
     const DOM = document.querySelector(selector);
     let HTML = '';
 
