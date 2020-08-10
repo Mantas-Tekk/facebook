@@ -1,6 +1,7 @@
 .header {
     background-color: #242526;
     color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
     .header-container {
         height: 60px;
@@ -138,7 +139,7 @@
                 .header-right > .header-profile > .header-profile-name {
                     padding: 5px 10px;
                     text-decoration: none;
-                    color: #fff;
+                    color: rgb(228, 230, 235);
                     font-weight: 600;
                 }
 
@@ -165,7 +166,7 @@
                     background-color: #4e4f50;
                 }
                     .header-right .header-right-icons > i {
-                        color: #fff;
+                        color: rgb(228, 230, 235);
                         font-size: 15px;
                     }
 

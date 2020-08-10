@@ -1,0 +1,10 @@
+#messenger {
+    background-color: #18191A;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 60px;
+    max-width: 360px;
+    min-width: 280px;
+}
