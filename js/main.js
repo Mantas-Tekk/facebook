@@ -1,10 +1,14 @@
 "use strict";
 
+// DATA
 import postData from "./data.js";
-import renderFeed from "./renderFeed.js";
+import sidemenuData from "./data/sidemenu.js";
 
+import renderFeed from "./renderFeed.js";
+import renderseidemenu from "./sidemenu/sidemenu.js";
 
 renderFeed(postData, "#feed");
+renderseidemenu(sidemenuData, "#sidemenu");
 
 
 const readMoreList = document.querySelectorAll(".feed p > .read-more");
