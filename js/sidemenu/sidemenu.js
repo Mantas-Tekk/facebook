@@ -19,9 +19,6 @@ function sidemeniu(data, selector){
                 </a>`;
     }
     HTML += "</div></div>";
-
-    console.log(data, selector);
-    // return DOM.innerHTML = HTML;
     return DOM.insertAdjacentHTML("afterbegin", HTML);
 }
 export default sidemeniu;
