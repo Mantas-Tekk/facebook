@@ -43,7 +43,7 @@
         margin: 0 4%;
         height: 1px;
     }
-        .title {
+        #sidemenu .title {
             width:92%;
             margin-left: 4%;
             height: 40px;
@@ -51,17 +51,17 @@
             display: flex;
             align-items: center;
         }
-        .title:hover a {
+        #sidemenu .title:hover a {
             opacity: 1;
         }
 
-            .title h3 {
+            #sidemenu .title h3 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 color: #888;
             }
-            .title a {
+            #sidemenu .title a {
                 opacity: 0;
                 color: rgb(54, 54, 179);
                 font-weight: 500;
@@ -75,7 +75,7 @@
                 top: 0;
                 right: 0; 
             }
-            .title a:hover {
+            #sidemenu .title a:hover {
                 padding: 0 5px;
                 background-color: #303031;
                 border-radius: 10%;

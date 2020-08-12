@@ -1,3 +1,25 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #18191A; 
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    opacity: .5;
+    border-radius: 10px;
+
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-track:hover {
+    background: #303031; 
+  }
+
 #messenger {
     background-color: #18191A;
     color: #fff;
@@ -7,4 +29,150 @@
     top: 60px;
     max-width: 360px;
     min-width: 280px;
+    overflow-y: scroll;
 }
+
+#messenger .group-links {
+    position: relative;
+}
+#messenger .group-links .group-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    background-color: #303031;
+    width: 92%;
+    margin: 0 4%;
+    height: 1px;
+}
+    #messenger .title {
+        width:92%;
+        margin-left: 4%;
+        height: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    /* #messenger .title:hover a {
+        opacity: 1;
+    } */
+
+        #messenger .title h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #888;
+        }
+        #messenger .title .contact-icons {
+            opacity: 1;
+            font-weight: 500;
+            width:100%;
+            text-decoration: none;
+            padding: 0 5px;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute; 
+            top: 0;
+            right: 0; 
+            /* background-color: chartreuse; */
+        }
+
+        #messenger .title a {
+            padding: 8px 8px;
+            text-decoration: none;
+        }
+            #messenger .title a > i,
+            #messenger .title a > div{
+                color: #888;
+                font-size: 20px;
+            }
+        #messenger .title a:hover {
+            background-color: #303031;
+            border-radius: 50%;
+        }
+
+        #messenger .sidemenu-item-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            height: 40px;
+            width: calc(100% - 10px);
+        }
+            #messenger .sidemenu-item-link:first-of-type{
+                margin-top: 20px;
+            }
+            #messenger .sidemenu-item-link:last-of-type{
+                margin-bottom: 30px;
+            }
+
+    #messenger .sidemenu-item-link > .sidemenu-item-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        margin-right: 10px;
+        position: relative;
+    }
+    #messenger .sidemenu-item-link > .sidemenu-item-wrap:hover {
+        background-color: #303031;
+    }
+
+        #messegner .profile-pic {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+            #messenger  .profile-pic > .sidemenu-item-img {
+                height: 30px;
+                width: 30px;
+                margin-left: 10px;
+            }
+            #messenger .profile-pic > .img {
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            #messenger .profile-pic > .status {
+                background-color: #31A24C;
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                bottom: 5px;
+                left: 30px;
+                border-radius: 50%;
+            }
+            #messenger .profile-pic::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: #303031;
+                /* background-color: #1F3520; */
+                position: absolute;
+                bottom: 4px;
+                left: 29px;
+                border-radius: 50%;
+            }
+
+
+
+        #messenger .sidemenu-item-wrap > .sidemenu-item-text {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 14px;
+            width: 100%;
+            height: 100%;
+        }
+            .sidemenu-item-text > p {
+                margin-left: 10px;
+                text-align: center;
+                color: #b3b6b9;
+                font-weight: 700;
+            }

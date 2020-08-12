@@ -3,12 +3,18 @@
 // DATA
 import postData from "./data.js";
 import sidemenuData from "./data/sidemenu.js";
+import messengerData from "./data/messengerData.js"
 
 import renderFeed from "./renderFeed.js";
 import renderseidemenu from "./sidemenu/sidemenu.js";
+import renderMessenger from "./messenger/renderMessenger.js";
+
+
+
 
 renderFeed(postData, "#feed");
 renderseidemenu(sidemenuData, "#sidemenu");
+renderMessenger(messengerData, "#messenger");
 
 
 const readMoreList = document.querySelectorAll(".feed p > .read-more");
