@@ -14,21 +14,21 @@ function timestampToTime(timestamp) {
     }
     const h = (min - min % 60) / 60;
     if(h < 24) {
-        return h+"h ago";
+        return h+"h";
     }
     const d = (h - h % 24) / 24;
     if(d < 7) {
-        return d+"d ago";
+        return d+"d";
     }
     const w = (d - d % 7) / 7;
     if(d < 36) {
-        return w+"w ago";
+        return w+"w";
     }
     const m = (d - d % 34) / 34;
     if(d < 366) {
-        return m+"m ago";
+        return m+"m";
     }
     
-    return (d-d%365) / 365 +"y ago";
+    return (d-d%365) / 365 +"y";
 }
 export default timestampToTime;

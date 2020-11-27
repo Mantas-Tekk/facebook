@@ -34,6 +34,7 @@ function readLessClick () {
 for(let i = 0; i < sizeMore; i++) {
     readMoreList[i].addEventListener("click", readMoreClick);
 }
+
 for(let i = 0; i < sizeLess; i++) {
     readLessList[i].addEventListener("click", readLessClick);
 }
