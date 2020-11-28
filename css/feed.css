@@ -181,6 +181,7 @@
                 .feed .profile-pic {
                     position: relative;
                     height: 100%;
+                    margin: 5px 0;
                 }
                 .feed  .profile-pic > .sidemenu-item-img {
                         height: 30px;
@@ -211,24 +212,39 @@
                 }
 
                 .feed .row > .input-wrapper {
-                    background-color: aqua;
+                    background-color: #3a3b3c;
                     height: 30px;
                     width: 100%;
-                    margin: 0 5px;
+                    margin: 5px 5px;
                     border-radius: 15px;
+                    display: inline-flex;
                 }
 
-                .feed .input-wrapper input {
-                    
-                }
-
-                .feed .input-wrapper .icons {
-
-                }
-                
-                    .feed .input-wrapper i {
-
+                    .feed .input-wrapper input {
+                        margin-left: 10px;
+                        width: 65%;
+                        background-color: transparent;
+                        border: none;
                     }
+                    .feed .input-wrapper input:focus {
+                        outline: none;
+                    }
+                    .feed .input-wrapper input::placeholder {
+                        color:darkgrey;
+                    }
+
+                    .feed .input-wrapper .icons {
+                        width: 100%;
+                        margin-right: 10px;
+                        display: flex;
+                        gap: 10px;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
+                    
+                        .feed .input-wrapper i {
+                            color: darkgrey;
+                        }
 
                 
                 
