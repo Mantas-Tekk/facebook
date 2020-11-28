@@ -1,6 +1,8 @@
     .feed >.post{
         /* border: solid 2px red; */
-        border:  1px solid #ccc;
+        /* border:  1px solid #ccc; */
+        border-radius: 2%;
+        background-color: #242526;
     }
         .feed >.post > .post-header{
             display: grid;
@@ -20,18 +22,20 @@
             .feed .post-header > .user-details{
                 grid-area: authorDetails;
                 padding: 10px 0;
+                color: #dee0e5;
             }
                 .feed .user-details > .author{
-                    margin-bottom: 15px;
                     line-height: 25px;
                     font-size: 18px;
                 }
                     .feed .user-details .link{
                         line-height: inherit;
+                        text-decoration: none;
+                        color: #dee0e5;
                     }
                 .feed .user-details > .time{
                     font-size: 15px;
-                    line-height: 15px;
+                    color: #909296;
                 }
             .feed .post-header > .post-actions{
                 grid-area: postActions;
@@ -41,6 +45,7 @@
         .feed >.post > .post-content{
             display: grid;
             grid-template-columns: 1fr;
+            color: #dee0e5;
         }
             .feed .post-content > p{
                 padding: 10px;
@@ -137,13 +142,111 @@
                 justify-content: center;
             }
 
+
+        /* ### FOOTER ### */
         .feed >.post > .post-footer{
             display: grid;
             grid-template-columns:  1fr;
             padding: 0 10px;
         }
             .feed .post-footer > .row{
-                padding: 10px;
-                border-top:  1px solid #ccc;
+                padding: 4px 0;
+                border-top:  1px solid rgba(104, 99, 99, 0.411);
+                display: flex;
+                align-items: stretch;
             }
+                /* ## FOOTER Likes And Comments ## */
+                .feed .post-footer a {
+                    display: flex;
+                    flex-grow: 1;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    color: #909296;
+                    background-color: Transparent;
+                }
+                    .feed a > i,
+                    .feed a > p {
+                        align-items: center;
+                        margin: 0 5px;
+                        font-weight: 600;
+                    }
+                .feed .post-footer a:hover {
+                    color: #fff;
+                    background-color: #909296;
+                    border-radius: 5px;
+                }
+                /* ## FOOTER Write comment ## */
+                .feed .profile-pic {
+                    position: relative;
+                    height: 100%;
+                    margin: 5px 0;
+                }
+                .feed  .profile-pic > .sidemenu-item-img {
+                        height: 30px;
+                        width: 30px;
+                }
+                    .feed .profile-pic > .img {
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                    .feed .profile-pic > .status {
+                        background-color: #31A24C;
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        bottom: 2px;
+                        left: 22px;
+                        border-radius: 50%;
+                    }
+                .feed .profile-pic::before {
+                    content: "";
+                    width: 11px;
+                    height: 11px;
+                    background-color: #303031;
+                    position: absolute;
+                    bottom: 1px;
+                    left: 20px;
+                    border-radius: 50%;
+                }
+
+                .feed .row > .input-wrapper {
+                    background-color: #3a3b3c;
+                    height: 30px;
+                    width: 100%;
+                    margin: 5px 5px;
+                    border-radius: 15px;
+                    display: inline-flex;
+                }
+
+                    .feed .input-wrapper input {
+                        margin-left: 10px;
+                        width: 65%;
+                        background-color: transparent;
+                        border: none;
+                    }
+                    .feed .input-wrapper input:focus {
+                        outline: none;
+                    }
+                    .feed .input-wrapper input::placeholder {
+                        color:darkgrey;
+                    }
+
+                    .feed .input-wrapper .icons {
+                        width: 100%;
+                        margin-right: 10px;
+                        display: flex;
+                        gap: 10px;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
+                    
+                        .feed .input-wrapper i {
+                            color: darkgrey;
+                        }
+
+                
+                
+
 
