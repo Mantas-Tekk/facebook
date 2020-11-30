@@ -26,6 +26,7 @@
     height: 100%;
     top:  60px;
     left: 0;
+    padding-bottom: 50px;
     max-width: 360px;
     min-width: 280px;
     overflow-y: scroll;

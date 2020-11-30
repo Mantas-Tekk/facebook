@@ -18,6 +18,7 @@ body {
 .menu{
     grid-area: menu;
 }
+
 .messenger{
     /* margin-top: 60px; */
     padding: 10px;

@@ -7,6 +7,7 @@ function renderFeed(data, selector) {
     for(let i = 0;i < size; i++){
         HTML += renderPost(data[i]);
     }
-    return document.querySelector(selector).innerHTML = HTML;
+    console.log(HTML);
+    return document.querySelector(selector).insertAdjacentHTML("beforeend", HTML);
 }
 export default renderFeed;
