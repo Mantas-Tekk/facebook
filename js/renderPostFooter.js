@@ -22,7 +22,7 @@ function renderPostFooter(data) {
                     </div>
 
                     <div class="input-wrapper">
-                        <input type="text" id="" name="" placeholder="Write a comment...">
+                        <input type="text" name="a" placeholder="Write a comment...">
                         <div class="icons">
                             <i class="fa fa-smile-o" aria-hidden="true"></i>
                             <i class="fa fa-camera" aria-hidden="true"></i>

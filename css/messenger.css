@@ -29,6 +29,7 @@
     top: 60px;
     max-width: 360px;
     min-width: 280px;
+    padding-bottom: 50px;
     overflow-y: scroll;
 }
 
